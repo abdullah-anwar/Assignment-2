@@ -1,0 +1,207 @@
+body{
+    background: #81a594;
+} 
+.widget 
+{
+    position: relative;
+    margin-top: 300px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    text-align: center;
+    vertical-align: middle;
+    width: 500px;
+    height: 300px;
+    display: inline-block;
+    background: lightblue;
+    border-radius: 15px 45px 15px;
+    /* Just so it's visible */    
+}
+
+h1
+{
+    margin-top: 20%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.backBtn {
+    
+    background:red;
+    width:175px;
+    height:65px;
+    margin:20px auto;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    box-shadow:0 1px 2px #5e5d5b;
+    text-align: center;
+    line-height: 65px;
+}
+
+
+
+/***************CLOCK***************/
+#clock {
+    position: relative;
+    width: 378px;
+    height: 378px;
+    background-image: url('../images/clockFace.png');
+    margin: 3em auto;
+}
+
+#clock div {
+    position: absolute;
+}
+
+
+/* The magic */
+#clock img[src*='second'] {
+    -webkit-transition: -webkit-transform 600000s linear;
+    -moz-transition: -moz-transform 600000s linear;
+    -o-transition: -o-transform 600000s linear;
+    -ms-transition: -ms-transform 600000s linear;
+    transition: transform 600000s linear;
+
+
+}
+
+#clock:target img[src*='second'] {
+    -webkit-transform: rotate(3600000deg);
+    -moz-transform: rotate(3600000deg);
+    -o-transform: rotate(3600000deg);
+    -ms-transform: rotate(3600000deg);
+    transform: rotate(3600000deg);
+
+
+}
+
+#clock img[src*='minute'] {
+    -webkit-transition: -webkit-transform 360000s linear;
+    -moz-transition: -moz-transform 360000s linear;
+    -o-transition: -o-transform 360000s linear;
+    -ms-transition: -ms-transform 360000s linear;
+    transition: transform 360000s linear;
+}
+
+#clock:target img[src*='minute'] {
+    -webkit-transform: rotate(36000deg);
+    -moz-transform: rotate(36000deg);
+    -o-transform: rotate(36000deg);
+    -ms-transform: rotate(36000deg);
+    transform: rotate(36000deg);
+}
+
+#clock img[src*='hour'] {
+    -webkit-transition: -webkit-transform 216000s linear;
+    -moz-transition: -moz-transform 216000s linear;
+    -o-transition: -o-transform 216000s linear;
+    -ms-transition: -ms-transform 216000s linear;
+    transition: transform 216000s linear;
+}
+
+#clock:target img[src*='hour'] {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+
+
+/*********************CALENDAR**********************/
+
+h2
+{
+    text-align: center;
+    vertical-align: middle;
+}
+
+h2.monthName.ng-binding {
+    text-align: center;
+    color: black;
+}
+
+
+#calendar {
+    float:left;
+    display:block;
+    background:white;
+    width: 100%;
+    border:solid 1px #00ff33;
+    margin-bottom:10px;
+    display:table;
+}
+
+#calendar>div.header {
+    float:left;
+    width:100%;
+    background:#00ff33;
+    height:60px;
+    color:white;
+    display:inline-block;
+}
+#calendar>div.header>i {
+    float:left;
+    width:40px;
+    height: 40px;
+    font-size:1.125em;
+    font-weight:bold;
+    padding:0 10px;
+    cursor:pointer;
+}
+
+
+
+#calendar>div.week {
+    float:left;
+    width:100%;
+    border-top:solid 1px #00ff33;
+    display:table-row;
+}        
+
+
+
+#calendar>span.day {
+    float:left;
+    width:100%;
+    border-left:solid 1px #00ff33;
+    font-size:0.75em;
+    text-align:center;
+    background:white;
+    cursor:pointer;
+    color:black;
+   
+}
+
+
+.today {
+    background:#00cc66;
+}
+
+
+.day {
+    color:#006600;
+    font-weight:bold;
+    width: 100px;
+    padding:10px;
+     display: table-cell;
+}
+
+/*******************WEATHER********************/
+#detailWeather{
+    position: absolute;
+    margin-top: 300px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 36.5%;
+    text-align: center;
+    vertical-align: middle;
+    width: 500px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 300px/100px; /* horizontal radius / vertical radius */
+    background: lightblue; 
+     
+}

@@ -1,0 +1,13 @@
+Web Engineering Assignment # 2
+Date: 20-11-2015
+
+Description:
+The project contains three widgets on dashboard.
+1- Current time in Digital Clock
+2- Current Day and Date
+3- Current Temperature and Condition
+
+When Clicked:
+1- Analogue Clock is displayed
+2- Complete Calender is displayed
+3- Complete weather details are displayed
